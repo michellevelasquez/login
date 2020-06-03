@@ -23,7 +23,11 @@ function showALL(event){
     var a = new User;
     a.obtener();
     console.log(a);
-    p(a);
+    if(k===true){
+        p(a);
+    }else{
+        continue;
+    }
 }
 
 //Class
@@ -61,3 +65,13 @@ let p = function(usuario){
 
 
 
+let k = function ValidateEmail(usuario) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(usuario.correo))
+  {
+    return (true)
+  }
+    alert("¡Ingrese un correo valido!")
+    return (false)
+
+}
