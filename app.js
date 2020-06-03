@@ -1,9 +1,9 @@
 //VARIABLES
 
-const forms = document.querySelector(".userform");
-const contra = document.querySelector(".password");
+const forms = document.querySelector(".bigbox");
+const contra = document.querySelector("#password");
 const boton = document.querySelector(".log")
-const correos = document.querySelector(".email");
+const correos = document.querySelector("#correo");
 
 
 //arrays
