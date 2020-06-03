@@ -1,23 +1,37 @@
-*{
-    box-sizing: border-box;
-}
-
 body{
-    margin: 0 0;
-    background-color: #ccddff;
+    width: 100vw;
+    height: 100vh;
+    
 }
-.userform{
-    font-size: 2rem;
+.boxs{
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-    width: 100%;
+    justify-content: space-between;
+
+   width: 100%;
+   height: 100%;
 }
 
-.userform input{
-    font-size: 1.5 em;
-    height: 1.9rem
+
+
+.bigbox{
+
+    position: relative;
+    margin: auto auto;
+    width: 50%;
+    max-width: 600px;
+
+    padding: 2rem 2rem;
+    background-color: papayawhip;
+    border-radius: 1rem;
+}
+
+.btnAround{
+  width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 .log,.reg-btn{
@@ -27,24 +41,11 @@ body{
     height: 2rem;
     transition: all 0.5s ease-in;
     scale: 1;
+    transition: all 0.3s ease-in;
 }
-
 .log:hover,
-.log:focus,
-.reg-btn:hover,
-.reg-btn:focus{
-    transform: scale(1.3);
-    cursor: pointer;
-}
-.boxs{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-}
-
-.linky{
-    font-size: 1rem;
+.log:focus{
+    transform: scale(1.2);
+    color: blue;
+    background-color: white;
 }
